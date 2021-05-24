@@ -87,10 +87,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -106,12 +103,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 70px;
 }
 
 .menu__wrapper .descriptions .coffee__logo h1 {
   display: inline-block;
   border-bottom: 6px solid #E03131;
   margin: 0;
+  font-size: 40px;
 }
 
 .menu__wrapper .descriptions .coffee__list li {
@@ -133,6 +132,10 @@ body {
   width: 100%;
 }
 
+.menu__wrapper .descriptions .others .food {
+  margin-bottom: 97px;
+}
+
 .menu__wrapper .descriptions .others .food__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,12 +143,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 70px;
 }
 
 .menu__wrapper .descriptions .others .food__logo h1 {
   display: inline-block;
   border-bottom: 6px solid #E03131;
   margin: 0;
+  font-size: 40px;
 }
 
 .menu__wrapper .descriptions .others .food__list li {
@@ -170,12 +175,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 70px;
 }
 
 .menu__wrapper .descriptions .others .other__logo h1 {
   display: inline-block;
   border-bottom: 6px solid #E03131;
   margin: 0;
+  font-size: 40px;
 }
 
 .menu__wrapper .descriptions .others .other__list li {
@@ -227,12 +234,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 70px;
 }
 
 .about .wrapper__logo h1 {
   display: inline-block;
   border-bottom: 6px solid #E03131;
   margin: 0;
+  font-size: 40px;
 }
 
 .about .wrapper__descriptions {
@@ -254,8 +263,9 @@ body {
 }
 
 .about .wrapper__descriptions ul li {
-  width: 50%;
-  max-width: 50%;
+  width: 437px;
+  height: 136px;
+  padding-bottom: 40px;
 }
 
 .about .wrapper__descriptions ul li p {
@@ -274,8 +284,38 @@ body {
           align-items: center;
   width: 160px;
   height: 50px;
-  border: 1px solid red;
   margin: 51px auto 0 auto;
+  position: relative;
+}
+
+.about .wrapper__btn .border {
+  position: absolute;
+  background: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.about .wrapper__btn .border:nth-of-type(1) {
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+  width: 30px;
+  height: 30px;
+}
+
+.about .wrapper__btn .border:nth-of-type(2) {
+  top: 0;
+  left: 0;
+  border-left: 1px solid red;
+  border-top: 1px solid red;
+  width: 30px;
+  height: 30px;
+}
+
+.about .wrapper__btn:hover .border {
+  width: 100%;
+  height: 100%;
 }
 
 .about .wrapper__btn a {
@@ -323,21 +363,8 @@ body {
   display: inline-block;
   border-bottom: 6px solid #E03131;
   margin: 0;
-}
-
-.location .wrapper__list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.location .wrapper__list li .item-name {
-  border-bottom: 1px solid #000;
-  width: 341px;
-}
-
-.location .wrapper__list li .item-price {
-  padding: 3px 0 0 16px;
+  font-size: 40px;
+  padding-bottom: 17px;
 }
 
 .location .wrapper__map {
@@ -347,11 +374,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 72px;
+  max-width: 1000px;
+  margin: 73px auto 0 auto;
 }
 
 .location .wrapper__map iframe {
-  width: 90%;
+  width: 100%;
+}
+
+.location .wrapper .location__details {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 footer .wrapper {
@@ -365,5 +399,28 @@ footer .wrapper {
 
 footer .wrapper p {
   font-size: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    width: 100%;
+  }
+  .header__header-logo h1 {
+    font-size: 85px;
+  }
+  .menu__wrapper .descriptions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__wrapper .descriptions .coffee {
+    border-right: none;
+  }
+  .about .wrapper ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
