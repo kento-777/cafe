@@ -14,6 +14,7 @@ a {
 
 body {
   font-family: "Helvetica Neue、Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif";
+  margin: 0;
 }
 
 @mixin center-logo {
@@ -47,12 +48,14 @@ body {
       display: flex;
           
       .item-name {
-        border-bottom: 1px solid #000;
+        border-bottom: 1px dotted #000;
         width: 341px;
+        font-size: 14px;
       }
 
       .item-price {
         padding: 3px 0 0 16px;
+        font-size: 14px;
       }
     }
   }
@@ -125,11 +128,11 @@ body {
       .coffee {
       border-right: 1px solid #000;
       @include description;
-      width: 100%;
+      width: 50%;
       }
     
       .others {
-        width: 100%;
+        width: 50%;
         
         .food {
           @include description;
@@ -327,10 +330,32 @@ footer {
 
       .descriptions {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .coffee {
           border-right: none;
-
+          width: 100%;
+          ul {
+            padding: 0 16px;
+          }
+        
+        }
+        .others {
+          width: 100%;
+          
+          .food {
+            ul {
+              padding: 0 16px;
+            }
+            
+          }
+          .other {
+            ul {
+              padding: 0 16px;
+            }
+            
+          }
         }
       }
     }

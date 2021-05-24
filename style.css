@@ -14,6 +14,7 @@ a {
 
 body {
   font-family: "Helvetica Neue、Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif";
+  margin: 0;
 }
 
 .header {
@@ -93,7 +94,7 @@ body {
 
 .menu__wrapper .descriptions .coffee {
   border-right: 1px solid #000;
-  width: 100%;
+  width: 50%;
 }
 
 .menu__wrapper .descriptions .coffee__logo {
@@ -120,16 +121,18 @@ body {
 }
 
 .menu__wrapper .descriptions .coffee__list li .item-name {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px dotted #000;
   width: 341px;
+  font-size: 14px;
 }
 
 .menu__wrapper .descriptions .coffee__list li .item-price {
   padding: 3px 0 0 16px;
+  font-size: 14px;
 }
 
 .menu__wrapper .descriptions .others {
-  width: 100%;
+  width: 50%;
 }
 
 .menu__wrapper .descriptions .others .food {
@@ -160,12 +163,14 @@ body {
 }
 
 .menu__wrapper .descriptions .others .food__list li .item-name {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px dotted #000;
   width: 341px;
+  font-size: 14px;
 }
 
 .menu__wrapper .descriptions .others .food__list li .item-price {
   padding: 3px 0 0 16px;
+  font-size: 14px;
 }
 
 .menu__wrapper .descriptions .others .other__logo {
@@ -192,12 +197,14 @@ body {
 }
 
 .menu__wrapper .descriptions .others .other__list li .item-name {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px dotted #000;
   width: 341px;
+  font-size: 14px;
 }
 
 .menu__wrapper .descriptions .others .other__list li .item-price {
   padding: 3px 0 0 16px;
+  font-size: 14px;
 }
 
 .about {
@@ -413,9 +420,28 @@ footer .wrapper p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menu__wrapper .descriptions .coffee {
     border-right: none;
+    width: 100%;
+  }
+  .menu__wrapper .descriptions .coffee ul {
+    padding: 0 16px;
+  }
+  .menu__wrapper .descriptions .others {
+    width: 100%;
+  }
+  .menu__wrapper .descriptions .others .food ul {
+    padding: 0 16px;
+  }
+  .menu__wrapper .descriptions .others .other ul {
+    padding: 0 16px;
   }
   .about .wrapper ul {
     -webkit-box-pack: center;
