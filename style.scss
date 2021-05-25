@@ -58,10 +58,13 @@ body {
         border-bottom: 1px dotted #000;
         width: 90%;
         font-size: 14px;
+        margin-right: 20px;
       }
 
       .item-price {
-        
+        vertical-align: text-bottom;
+        padding-top: 20px;
+        margin: 0;
         font-size: 14px;
       }
     }
@@ -392,6 +395,7 @@ body {
       
       iframe {
         width: 100%;
+        border: 0;
         
       }
     }

@@ -143,9 +143,13 @@ body {
   border-bottom: 1px dotted #000;
   width: 90%;
   font-size: 14px;
+  margin-right: 20px;
 }
 
 .menu__wrapper .descriptions .coffee__list li .item-price {
+  vertical-align: text-bottom;
+  padding-top: 20px;
+  margin: 0;
   font-size: 14px;
 }
 
@@ -190,9 +194,13 @@ body {
   border-bottom: 1px dotted #000;
   width: 90%;
   font-size: 14px;
+  margin-right: 20px;
 }
 
 .menu__wrapper .descriptions .others .food__list li .item-price {
+  vertical-align: text-bottom;
+  padding-top: 20px;
+  margin: 0;
   font-size: 14px;
 }
 
@@ -228,9 +236,13 @@ body {
   border-bottom: 1px dotted #000;
   width: 90%;
   font-size: 14px;
+  margin-right: 20px;
 }
 
 .menu__wrapper .descriptions .others .other__list li .item-price {
+  vertical-align: text-bottom;
+  padding-top: 20px;
+  margin: 0;
   font-size: 14px;
 }
 
@@ -503,6 +515,7 @@ body {
 
 .location .wrapper__map iframe {
   width: 100%;
+  border: 0;
 }
 
 .location .wrapper .location__details {
